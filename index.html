@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
+    <title>Taras Goriachko</title>
     <style>
         body {
             margin: 0;
@@ -25,42 +25,30 @@
             background-color: #333;
             margin: 20px 0;
         }
-        .theme-toggle {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: none;
-            border: none;
-            color: inherit;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        /* Dark theme */
-        body.dark-theme {
-            background: radial-gradient(circle, #333333 0%, #000000 100%);
-            color: #ffffff;
-        }
+        
         /* Light theme */
-        body.light-theme {
+        body {
             background: radial-gradient(circle, #fffff0 0%, #ffffff 100%);
             color: #000000;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: radial-gradient(circle, #333333 0%, #000000 100%);
+                color: #ffffff;
+            }
+
+            .line {
+                background-color: #BBB;
+            }
         }
     </style>
 </head>
 <body class="dark-theme">
-    <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
     <div class="container">
-        <h1>Your Name</h1>
+        <h1>TarasHor IT</h1>
         <div class="line"></div>
-        <p>Welcome to my personal website!</p>
+        <p>Ph.D., entrepreneur, engineer</p>
     </div>
-
-    <script>
-        function toggleTheme() {
-            const body = document.body;
-            body.classList.toggle('dark-theme');
-            body.classList.toggle('light-theme');
-        }
-    </script>
 </body>
 </html>
