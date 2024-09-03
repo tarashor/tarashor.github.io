@@ -117,19 +117,6 @@ main {
   margin: 20px 0;
 }
 
-/* --- DARK MODE --- */
-@media (prefers-color-scheme: dark) {
-  body {
-    background: radial-gradient(circle, #333333 0%, #000000 100%);
-    color: #ffffff;
-  }
-
-  .line {
-    background-color: #bbb;
-  }
-}
-
-
 /* --- FOOTER --- */
 
 footer {
@@ -151,3 +138,34 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+/* --- DARK MODE --- */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: radial-gradient(circle, #333333 0%, #000000 100%);
+    color: #ffffff;
+  }
+
+  .line {
+    background-color: #bbb;
+  }
+
+  .icon {
+    fill: #FFFFFF;
+  }
+  
+  .icon:hover {
+    fill: #AAAAAA; 
+  }
+
+  header a {
+    color: #FFFFFF;
+  }
+
+  footer a {
+    color: #FFFFFF;
+  }
+}
+
+
+
