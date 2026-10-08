@@ -40,6 +40,7 @@ a:focus-visible {
 header,
 footer {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 24px clamp(20px, 5vw, 64px);
@@ -55,6 +56,7 @@ header {
 
 nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
@@ -108,6 +110,7 @@ h1 {
 
 .links {
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
   margin-top: 32px;
 }
