@@ -1,0 +1,22 @@
+name: Another simple workflow test
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Run a simple smoke test
+        run: |
+          echo "Another workflow is running successfully!"
+          test -s index.html
+          echo "index.html exists and is not empty."
